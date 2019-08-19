@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="EmployeesRestAPISuite">
+    <listeners>
+        <listener class-name="utilities.Listeners"></listener>
+    </listeners>
+    <test name="APITestAutomationFrameWork">
+        <classes>
+            <class name="testCases.postUpdateGetDelete" ></class>
+            <class name="testCases.getAllEmployeeData"></class>
+
+            <class name="testCases.getSingleEmployeeRecord"></class>
+
+            <class name="testCases.putEmployeeRecord"></class>
+
+            <class name="UnHappyTestCases.enterEmployeeDataWithSameUserName"></class>
+
+            <class name="UnHappyTestCases.updateUserGeoAddressWithOutAddress"></class>
+
+            <class name="UnHappyTestCases.updateUserMissingAddres"></class>
+
+            <class name="UnHappyTestCases.updateUserMissingCompanyAddress"></class>
+
+            <class name="UnHappyTestCases.userNotFoundByIds"></class>
+
+            <class name="UnHappyTestCases.userNotFoundByUserNames"></class>
+
+
+        </classes>
+
+    </test>
+</suite>
